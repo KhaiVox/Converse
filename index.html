@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converse</title>
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <!-- Link reset css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <!-- Link icon -->
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.4-web/css/all.css"> />
+    <!-- Link font chữ -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+    </style>
+</head>
+
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid wide">
+                <!-- Header Navigation -->
+                <nav class="header__navbar">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item">
+                            <a href="#my-modal" class="header__navbar-login">
+                                <strong>Đăng Nhập / Đăng Kí</strong>
+                            </a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="/" class="header__navbar-logo-link">
+                                <div class="header__navbar-logo-img" style="background-image: url(http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/logo-mona.png)"></div>
+                            </a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <div class="header__navbar-search">
+                                <i class="header__navbar-icon-search fas fa-search"></i>
+                                <!-- Header Search -->
+                                <div class="header__search-input-wrap">
+                                    <input type="text" class="header__search-input" placeholder="Tìm kiếm...">
+                                    <i class="header__search-input-icon fas fa-search"></i>
+                                </div>
+                            </div>
+                            <a href="" class="header__navbar-bag">
+                                <strong>Giỏ Hàng</strong>
+                                <i class="header__navbar-icon-bag fas fa-shopping-bag"></i>
+                                <div class="header__bag-list header__bag-list--no-product">
+                                    <img src="./assets/img/no__product.png" alt="" class="header__bag-list--no-product-img">
+                                    <span class="header__bag-list--no-product-msg">
+                                        Chưa có sản phẩm
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- Header Sub -->
+            <div class="header__sub">
+                <div class="header__sub-wrap">
+                    <ul class="header__sub-list">
+                        <li class="header__sub-item header__sub-item-active">
+                            <a href="" class="header__sub-item-link">Trang chủ</a>
+                        </li>
+                        <li class="header__sub-item">
+                            <a href="" class="header__sub-item-link">Giới thiệu</a>
+                        </li>
+                        <li class="header__sub-item">
+                            <a href="" class="header__sub-item-link">Nữ
+                                <i class="header__sub-item-icon fas fa-chevron-down"></i>
+                            </a>
+                            <ul class="header__sub-description-list">
+                                <li class="header__sub-description-item">
+                                    Classic
+                                </li>
+                                <li class="header__sub-description-item">
+                                    Sunbaked
+                                </li>
+                                <li class="header__sub-description-item">
+                                    Chuck 07s
+                                </li>
+                                <li class="header__sub-description-item">
+                                    One Start
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header__sub-item">
+                            <a href="" class="header__sub-item-link">Nam
+                                <i class="header__sub-item-icon fas fa-chevron-down"></i>
+                            </a>
+                            <ul class="header__sub-description-list">
+                                <li class="header__sub-description-item">
+                                    Classic
+                                </li>
+                                <li class="header__sub-description-item">
+                                    Sunbaked
+                                </li>
+                                <li class="header__sub-description-item">
+                                    Chuck 07s
+                                </li>
+                                <li class="header__sub-description-item">
+                                    One Start
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header__sub-item">
+                            <a href="" class="header__sub-item-link">Trẻ em</a>
+                        </li>
+                        <li class="header__sub-item">
+                            <a href="" class="header__sub-item-link">Phụ kiện khác</a>
+                        </li>
+                        <li class="header__sub-item">
+                            <a href="" class="header__sub-item-link">Tin tức</a>
+                        </li>
+                        <li class="header__sub-item">
+                            <a href="" class="header__sub-item-link">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <div class="slider">
+            <div class="grid wide">
+                <div class="slider-img" style="background-image: url(/assets/img/slide__1.jpg);"></div>
+                <div class="slider-content">
+                    <h2 class="slider-heading">
+                        MONA SNE
+                        <i class="slider-icon far fa-star"></i> KER
+                    </h2>
+                    <div class="slider-description">Chào mừng bạn đến với ngôi nhà Converse! Tại đây, mỗi một dòng chữ, mỗi chi tiết và hình ảnh đều là những bằng chứng mang dấu ấn lịch sử Converse 100 năm, và đang không ngừng phát triển lớn mạnh. </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="app__container">
+            <div class="grid wide">
+                <!-- Product Category -->
+                <div class="row">
+                    <div class="col l-12">
+                        <ul class="category-list">
+                            <li class="category-item category-item--active">
+                                <a href="" class="category-item__link">Sản phẩm mới</a>
+                            </li>
+                            <li class="category-item">
+                                <a href="" class="category-item__link">Sản phẩm bán chạy</a>
+                            </li>
+                            <li class="category-item">
+                                <a href="" class="category-item__link">Sản phẩm phổ biến</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Product -->
+                <div class="home-product">
+                    <div class="row">
+                        <div class="col l-3">
+                            <a href="#" class="home-product-item">
+                                <div class="flip-card">
+                                    <div class="flip-card__inner">
+                                        <div class="flip-card__front">
+                                            <div class="home-product-item__img" style="background-image: url(https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dwcba49227/images/a_107/572236C_A_107X1.jpg?sw=964);"></div>
+                                        </div>
+                                        <div class="flip-card__back">
+                                            <div class="home-product-item__img" style="background-image: url(https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dw0d804434/images/h_107/572236C_H_107X1.jpg?sw=2000);"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h4 class="home-product-item__name">Chuck Taylor All Star</h4>
+                                <div class="home-product-item__price">$ 70,00</div>
+                                <button class="btn home-product-item__add">Thêm vào giỏ</button>
+                            </a>
+                        </div>
+                        <div class="col l-3">
+                            <a href="#" class="home-product-item">
+                                <div class="flip-card">
+                                    <div class="flip-card__inner">
+                                        <div class="flip-card__front">
+                                            <div class="home-product-item__img" style="background-image: url(https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dwe850eb28/images/a_107/572708C_A_107X1.jpg?sw=964);"></div>
+                                        </div>
+                                        <div class="flip-card__back">
+                                            <div class="home-product-item__img" style="background-image: url(https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dw6b3775ba/images/h_107/572708C_H_107X1.jpg?sw=2000);"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h4 class="home-product-item__name">All Star Lift Platform Crafted Canvas</h4>
+                                <div class="home-product-item__price">$ 75,00</div>
+                                <button class="btn home-product-item__add">Thêm vào giỏ</button>
+                            </a>
+                        </div>
+                        <div class="col l-3">
+                            <a href="#" class="home-product-item">
+                                <div class="flip-card">
+                                    <div class="flip-card__inner">
+                                        <div class="flip-card__front">
+                                            <div class="home-product-item__img" style="background-image: url(https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dwabcdc45d/images/a_107/168864C_A_107X1.jpg?sw=964);"></div>
+                                        </div>
+                                        <div class="flip-card__back">
+                                            <div class="home-product-item__img" style="background-image: url(https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dwcf10c0e3/images/g_107/168864C_G_107X1.jpg?sw=2000);"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h4 class="home-product-item__name">Utility All Terrain Chuck Taylor All Star</h4>
+                                <div class="home-product-item__price">$ 130,00</div>
+                                <button class="btn home-product-item__add">Thêm vào giỏ</button>
+                            </a>
+                        </div>
+                        <div class="col l-3">
+                            <a href="#" class="home-product-item">
+                                <div class="flip-card">
+                                    <div class="flip-card__inner">
+                                        <div class="flip-card__front">
+                                            <div class="home-product-item__img" style="background-image: url(https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dw9d0ff752/images/a_107/166800C_A_107X1.jpg?sw=964);"></div>
+                                        </div>
+                                        <div class="flip-card__back">
+                                            <div class="home-product-item__img" style="background-image: url(https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dwf3fff27a/images/g_107/166800C_G_107X1.jpg?sw=2000);"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h4 class="home-product-item__name">Run Star Hike</h4>
+                                <div class="home-product-item__price">$ 110,00</div>
+                                <button class="btn home-product-item__add">Thêm vào giỏ</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Accessory Category-->
+                <div class="row">
+                    <div class="col l-12">
+                        <ul class="category-list category-list-accessory">
+                            <li class="category-item category-item--active">
+                                <a href="" class="category-item-accessory">Phụ Kiện Khác</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Accessory -->
+                <div class="accessory">
+                    <div class="row">
+                        <div class="col l-3">
+                            <a href="#" class="home-product-item">
+                                <div class="home-product-item__img" style="background-image: url(https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dweb988b3d/images/a_107/10019900-A03_A_107X1.jpg?sw=964);"></div>
+                                <h4 class="home-product-item__name">Go 2 Backpack</h4>
+                                <div class="home-product-item__price">$ 12,97</div>
+                                <button class="btn home-product-item__add">Thêm vào giỏ</button>
+                            </a>
+                        </div>
+                        <div class="col l-3">
+                            <a href="#" class="home-product-item">
+                                <div class="home-product-item__img" style="background-image: url(https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dw75f387e9/images/a_107/10022394-A01_A_107X1.jpg?sw=964);"></div>
+                                <h4 class="home-product-item__name">Counter Climate Sling Pack</h4>
+                                <div class="home-product-item__price">$ 29,97</div>
+                                <button class="btn home-product-item__add">Thêm vào giỏ</button>
+                            </a>
+                        </div>
+                        <div class="col l-3">
+                            <a href="#" class="home-product-item">
+                                <div class="home-product-item__img" style="background-image: url(https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dw9730e53b/images/a_107/10007887-A01_A_107X1.jpg?sw=964);"></div>
+                                <h4 class="home-product-item__name">Nova Chuck Taylor Patch Tee</h4>
+                                <div class="home-product-item__price">$ 9,97</div>
+                                <button class="btn home-product-item__add">Thêm vào giỏ</button>
+                            </a>
+                        </div>
+                        <div class="col l-3">
+                            <a href="#" class="home-product-item">
+                                <div class="home-product-item__img" style="background-image: url(https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dw4e4b3d7f/images/a_107/10023932-A01_A_107X1.png?sw=964);"></div>
+                                <h4 class="home-product-item__name">Ignite Sunglasses</h4>
+                                <div class="home-product-item__price">$ 34,97</div>
+                                <button class="btn home-product-item__add">Thêm vào giỏ</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="accessory-view">
+                        <button class="btn btn-view-all">Xem tất cả</button>
+                    </div>
+
+                </div>
+
+                <!-- Discount -->
+                <div class="discount">
+                    <div class="row">
+                        <div class="discount-overlay"></div>
+                        <div class="col l-12">
+                            <div class="discount-img" style="background-image: url(/assets/img/slide__3.jpg);"></div>
+                            <div class="discount-content">
+                                <h4 class="discount-heading">
+                                    MONA SNE
+                                    <i class="discount-icon far fa-star"></i> KER
+                                </h4>
+                                <div class="discount-title">KHUYẾN MÃI </div>
+                                <div class="discount-percent">GIẢM GIÁ 50%</div>
+                                <div class="accessory-view">
+                                    <button class="btn  btn-view-product">Xem sản phẩm</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Discount Category-->
+                <div class="row">
+                    <div class="col l-12">
+                        <ul class="category-list category-list-accessory">
+                            <li class="category-item category-item--active">
+                                <a href="" class="category-item-accessory">Sản Phẩm Giảm Giá</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Discount Products -->
+                <div class="discount-products">
+                    <div class="row">
+                        <div class="col l-3 home-product-itemm">
+                            <a href="#" class="home-product-item">
+                                <div class="home-product-item__img" style="background-image: url(https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dwa3515f89/images/a_107/A01785C_A_107X1.jpg?sw=964);"></div>
+                                <h4 class="home-product-item__name">Chuck 70 Crafting Canvas</h4>
+                                <div class="home-product-item__price-old">$ 112,00</div>
+                                <div class="home-product-item__price">$ 85,00</div>
+                                <button class="btn home-product-item__add">Thêm vào giỏ</button>
+                            </a>
+                        </div>
+                        <div class="col l-3">
+                            <a href="#" class="home-product-item">
+                                <div class="home-product-item__img" style="background-image: url(https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dw4165f586/images/a_107/A01802C_A_107X1.jpg?sw=964);"></div>
+                                <h4 class="home-product-item__name">Chuck 70 Wordmark Ribbon Laces</h4>
+                                <div class="home-product-item__price-old">$ 127,00</div>
+                                <div class="home-product-item__price">$ 85,00</div>
+                                <button class="btn home-product-item__add">Thêm vào giỏ</button>
+                            </a>
+                        </div>
+                        <div class="col l-3">
+                            <a href="#" class="home-product-item">
+                                <div class="home-product-item__img" style="background-image: url(https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dw9ddbe409/images/a_107/173196C_A_107X1.jpg?sw=964);"></div>
+                                <h4 class="home-product-item__name">Final Club Chuck 70</h4>
+                                <div class="home-product-item__price-old">$ 146,00</div>
+                                <div class="home-product-item__price">$ 90,00</div>
+                                <button class="btn home-product-item__add">Thêm vào giỏ</button>
+                            </a>
+                        </div>
+                        <div class="col l-3">
+                            <a href="#" class="home-product-item">
+                                <div class="home-product-item__img" style="background-image: url(https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dwebba257f/images/a_107/171685C_A_107X1.jpg?sw=964);"></div>
+                                <h4 class="home-product-item__name">Court Reimagined Chuck 70 Court</h4>
+                                <div class="home-product-item__price-old">$ 92,00</div>
+                                <div class="home-product-item__price">$ 74,97</div>
+                                <button class="btn home-product-item__add">Thêm vào giỏ</button>
+                            </a>
+                        </div>
+                        <div class="col l-3">
+                            <a href="#" class="home-product-item">
+                                <div class="home-product-item__img" style="background-image: url(https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dw5a78bcfb/images/a_107/170996C_A_107X1.jpg?sw=964);"></div>
+                                <h4 class="home-product-item__name">UNT1TL3D</h4>
+                                <div class="home-product-item__price-old">$ 53,00</div>
+                                <div class="home-product-item__price">$ 39,97</div>
+                                <button class="btn home-product-item__add">Thêm vào giỏ</button>
+                            </a>
+                        </div>
+                        <div class="col l-3">
+                            <a href="#" class="home-product-item">
+                                <div class="home-product-item__img" style="background-image: url(https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dw8cfda397/images/a_107/A01590C_A_107X1.jpg?sw=964);"></div>
+                                <h4 class="home-product-item__name">Chuck Taylor All Star Archive</h4>
+                                <div class="home-product-item__price-old">$ 87,00</div>
+                                <div class="home-product-item__price">$ 62,00</div>
+                                <button class="btn home-product-item__add">Thêm vào giỏ</button>
+                            </a>
+                        </div>
+                        <div class="col l-3">
+                            <a href="#" class="home-product-item">
+                                <div class="home-product-item__img" style="background-image: url(https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dw580d11d9/images/a_107/172365C_A_107X1.jpg?sw=964);"></div>
+                                <h4 class="home-product-item__name">Sherpa Chuck 70</h4>
+                                <div class="home-product-item__price-old">$ 90,00</div>
+                                <div class="home-product-item__price">$ 74,97</div>
+                                <button class="btn home-product-item__add">Thêm vào giỏ</button>
+                            </a>
+                        </div>
+                        <div class="col l-3">
+                            <a href="#" class="home-product-item">
+                                <div class="home-product-item__img" style="background-image: url(https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dw2e998d2c/images/a_107/164027F_A_107X1.jpg?sw=964);"></div>
+                                <h4 class="home-product-item__name">Converse Colors Chuck Taylor All Star</h4>
+                                <div class="home-product-item__price-old">$ 87,00</div>
+                                <div class="home-product-item__price">$ 62,00</div>
+                                <button class="btn home-product-item__add">Thêm vào giỏ</button>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-3">
+                        <h1 class="footer-heading">Giới Thiệu</h1>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <p class="footer-item__description">Chào mừng bạn đến với ngôi nhà Converse! Tại đây, mỗi một dòng chữ, mỗi chi tiết và hình ảnh đều là những bằng chứng mang dấu ấn lịch sử Converse 100 năm, và đang không ngừng phát triển lớn mạnh.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-3">
+                        <h1 class="footer-heading">Địa Chỉ</h1>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <div class="footer-item__location">
+                                    <i class="footer-icon fas fa-map-marked-alt"></i>80/66/49 Dương Quảng Hàm, Phường 5, Quận Gò Vấp, Tp.HCM</div>
+                            </li>
+                            <li class="footer-item">
+                                <a href="tel:+0971521472" class="footer-item__link">
+                                    <i class="footer-icon fas fa-phone-alt"></i>0971 521 472</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="mailto:khaiduchoa@gmail.com" class="footer-item__link">
+                                    <i class="footer-icon fas fa-envelope"></i>khaiduchoa@gmail.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-3">
+                        <h1 class="footer-heading">Menu</h1>
+                        <ul class="footer-list footer-wrap">
+                            <div class="footer-item-wrap">
+                                <li class="footer-item footer-item--active">
+                                    <a href="" class="footer-item__link">Trang Chủ</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="" class="footer-item__link">Cửa Hàng</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="" class="footer-item__link">Giới Thiệu</a>
+                                </li>
+                            </div>
+                            <div class="footer-item-wrap">
+                                <li class="footer-item">
+                                    <a href="" class="footer-item__link">Liên Hệ</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="" class="footer-item__link">Tin Tức</a>
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="col l-3">
+                        <h1 class="footer-heading">Mạng Xã Hội</h1>
+                        <div class="footer-wrap">
+                            <a href="" class="footer-item__icon facebook">
+                                <i class="fab fa-facebook-f"></i>
+                                <span class="tooltip">Facebook</span>
+                            </a>
+                            <a href="" class="footer-item__icon twitter">
+                                <i class="fab fa-twitter"></i>
+                                <span class="tooltip">Twitter</span>
+                            </a>
+                            <a href="" class="footer-item__icon instagram">
+                                <i class="fab fa-instagram"></i>
+                                <span class="tooltip">Instagram</span>
+                            </a>
+                            <a href="" class="footer-item__icon youtube">
+                                <i class="fab fa-youtube"></i>
+                                <span class="tooltip">Youtube</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col l-6">
+                        <h1 class="footer-heading">Đăng Ký Nhận Thông Tin</h1>
+                        <div class="footer-wrap">
+                            <input type="text" class="footer-input" placeholder="Email...">
+                            <div class="footer-register" type="submit" value="ĐĂNG KÝ">ĐĂNG KÝ</div>
+                        </div>
+                    </div>
+                    <div class="col l-6">
+                        <h1 class="footer-heading">Thanh Toán</h1>
+                        <ul class="footer-list footer-wrap">
+                            <li class="footer-item">
+                                <img src="/assets/img/payment__1.png" alt="" class="footer-item__img">
+                            </li>
+                            <li class="footer-item">
+                                <img src="/assets/img/payment__2.png" alt="" class="footer-item__img">
+                            </li>
+                            <li class="footer-item">
+                                <img src="/assets/img/payment__3.png" alt="" class="footer-item__img">
+                            </li>
+                            <li class="footer-item">
+                                <img src="/assets/img/payment__4.png" alt="" class="footer-item__img">
+                            </li>
+                            <li class="footer-item">
+                                <img src="/assets/img/payment__5.png" alt="" class="footer-item__img">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer__bottom">
+                <div class="grid wide">
+                    <p class="footer__text">© 2022 - Bản quyền thuộc về Công ty Khởi Nghiệp 1 thành Ziên</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- Modal Layout -->
+    <div class="modal" id="my-modal">
+        <div class="modal__overlay"></div>
+        <a href="#" class="overlay-close"></a>
+
+        <div class="modal__body">
+            <!-- Register Form -->
+            <div class="auth-form form-size__register">
+                <div class="auth-form__header">
+                    <h3 class="auth-form__heading">Đăng Ký</h3>
+                </div>
+                <div class="auth-form__group">
+                    <div class="auth-form__title">Email của bạn</div>
+                    <input type="text" class="auth-form__input">
+                </div>
+                <div class="auth-form__group">
+                    <div class="auth-form__title">Mật khẩu</div>
+                    <input type="password" class="auth-form__input">
+                </div>
+                <div class="auth-form__group">
+                    <div class="auth-form__title">Nhập lại mật khẩu</div>
+                    <input type="password" class="auth-form__input">
+                </div>
+                <div class="auth-form__controls">
+                    <button class="btn btn-register">ĐĂNG KÝ</button>
+                </div>
+                <div class="line">
+                    <p class="line-text">HOẶC</p>
+                </div>
+
+                <div class="auth-form__socials">
+                    <a href="" class="auth-form__socials--facebook btn--width-icon">
+                        <i class="fab fa-facebook-f"></i>
+                        <span class="auth-form__socials-title">Facebook</span>
+                    </a>
+                    <a href="" class="auth-form__socials--google btn--width-icon">
+                        <i class="fab fa-google"></i>
+                        <span class="auth-form__socials-title">Google</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Login Form -->
+            <div class="auth-form form-size__login active">
+                <div class="auth-form__header">
+                    <h3 class="auth-form__heading">Đăng Nhập</h3>
+                </div>
+                <div class="auth-form__group">
+                    <div class="auth-form__title">Email</div>
+                    <input type="text" class="auth-form__input">
+                </div>
+                <div class="auth-form__group">
+                    <div class="auth-form__title">Mật khẩu</div>
+                    <input type="text" class="auth-form__input">
+                </div>
+                <div class="auth-form__group">
+                    <input type="checkbox" class="auth-form__checkbox">
+                    <span class="auth-form__checkbox-description">Ghi nhớ mật khẩu</span>
+                    <li class="auth-form__forgot">
+                        <a href="" class="auth-form__forgot-link">Quên mật khẩu ?</a>
+                    </li>
+                </div>
+                <div class="auth-form__controls">
+                    <button class="btn btn-register">ĐĂNG NHẬP</button>
+                </div>
+                <span class="auth-form__wonder">
+                    <p class="auth-form__wonder-text">Bạn chưa có tài khoản?</p>
+                    <a href="" class="auth-form__wonder-login">Đăng Ký</a>
+                </span>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

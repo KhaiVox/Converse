@@ -1,0 +1,127 @@
+:root {
+    --primary-color: #000;
+    --white-color: #fff;
+    --text-color: #dcdcdc;
+    --border-color: #ccc;
+    --hover-color: rgb(238, 238, 238);
+    --light-red-color: #c30005;
+    --dark-red-color: #9c0004;
+    --facebook-color: #3b5999;
+    --twitter-color: #46c1f6;
+    --instagram-color: #e1306c;
+    --youtube-color: #de463b;
+    --header-height: 80px;
+    --header-sub: 55px;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.65%;
+    line-height: 16px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* Animation */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes growth {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+/* Button */
+
+.btn {
+    min-width: 115px;
+    min-height: 30px;
+    padding: 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: var(--white-color);
+    background-color: var(--light-red-color);
+}
+
+.btn:hover {
+    background-color: var(--dark-red-color);
+}
+
+
+/* Modal */
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    z-index: 1000;
+    display: none;
+}
+
+.modal:target {
+    display: flex;
+}
+
+.modal .active {
+    display: block;
+}
+
+.overlay-close {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: default;
+}
+
+.modal__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal__body {
+    z-index: 1;
+    margin: auto;
+    border-radius: 3px;
+    animation: growth linear 0.3s;
+    background-color: var(--white-color);
+}
+
+.form-size__register {
+    width: 430px;
+    height: 450px;
+    display: none;
+}
+
+.form-size__login {
+    width: 450px;
+    height: 390px;
+    display: none;
+}
