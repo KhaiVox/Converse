@@ -1,1 +1,1 @@
-https://github.com/KhaiVox/Converse.git
+https://khaivox.github.io/Converse/
